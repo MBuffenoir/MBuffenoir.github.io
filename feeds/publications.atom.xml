@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mat's weblog</title><link href="/" rel="alternate"></link><link href="/feeds/publications.atom.xml" rel="self"></link><id>/</id><updated>2016-06-15T12:00:00+02:00</updated><entry><title>My Web publications from the first half of 2016</title><link href="/web-publications-first-half-2016.html" rel="alternate"></link><published>2016-06-15T12:00:00+02:00</published><author><name>Mathieu Buffenoir</name></author><id>tag:,2016-06-15:web-publications-first-half-2016.html</id><summary type="html">&lt;p&gt;I've been writing quite a few articles / tutorials in the first part of this year. Here is a quick list of them in absolutely no order:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mat's weblog</title><link href="/" rel="alternate"></link><link href="/feeds/publications.atom.xml" rel="self"></link><id>/</id><updated>2016-06-15T12:00:00+02:00</updated><entry><title>My Web publications from the first half of 2016</title><link href="/web-publications-first-half-2016.html" rel="alternate"></link><published>2016-06-15T12:00:00+02:00</published><author><name>Mathieu Buffenoir</name></author><id>tag:,2016-06-15:web-publications-first-half-2016.html</id><summary type="html">&lt;p&gt;I've been writing quite a few articles / tutorials in the first part of this year. Here is a list of them, not really in a specific order:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The &lt;a href="https://www.linux.com/learn/how-manage-logs-docker-environment-compose-and-elk"&gt;first one I wrote for linux.com&lt;/a&gt; on how to manage your docker applications logs&lt;/li&gt;
+&lt;li&gt;The first one I wrote for linux.com was on &lt;a href="https://www.linux.com/learn/how-manage-logs-docker-environment-compose-and-elk"&gt;how to manage your docker applications logs&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This was followed by the two first article in my series named "how to integrate docker in your CI/CD pipelines":&lt;/p&gt;
+&lt;p&gt;It was followed by two others, which are part of a series called "how to integrate docker in your CI/CD pipelines":&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How to use the docker hub &lt;a href="https://www.linux.com/learn/integrating-docker-hub-your-application-build-process"&gt;to create automated build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;How to use the docker hub &lt;a href="https://www.linux.com/learn/integrating-docker-hub-your-application-build-process"&gt;to an create automated build&lt;/a&gt; of your application&lt;/li&gt;
 &lt;li&gt;How to run your &lt;a href="https://www.linux.com/learn/how-automate-web-application-testing-docker-and-travis"&gt;docker images applications units tests in Travis-ci&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I also wrote several times on the blog of my favorite cloud provider Exoscale&lt;/p&gt;
+&lt;p&gt;I also wrote several times on the blog of my favorite cloud provider Exoscale:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;As a big fan of the mighty Ansible, I wrote on how to use it to &lt;a href="https://www.exoscale.ch/syslog/2016/05/26/nginx-ansible/"&gt;deploy webservers&lt;/a&gt; on their platform&lt;/li&gt;
-&lt;li&gt;Because I think the documentation on how to use cloudstack API is not explanotory enough, I did this &lt;a href="https://www.exoscale.ch/syslog/2016/02/23/get-started-with-the-exoscale-api-client/"&gt;little cheatsheet of cs command&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Something that should help you keep your cloud infrastructures safer: &lt;a href="https://www.exoscale.ch/syslog/2016/01/15/secure-your-cloud-computing-architecture-with-a-bastion/"&gt;Creating a Bastion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;As a big fan of the mighty Ansible, I wrote on how to use it to &lt;a href="https://www.exoscale.ch/syslog/2016/05/26/nginx-ansible/"&gt;deploy webservers&lt;/a&gt; on their platform.&lt;/li&gt;
+&lt;li&gt;Because I think the documentation on how to use cloudstack API is not explanotory enough, I did this &lt;a href="https://www.exoscale.ch/syslog/2016/02/23/get-started-with-the-exoscale-api-client/"&gt;little cheatsheet of cs command&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Oh and also something that should help you keep your cloud infrastructure safe: &lt;a href="https://www.exoscale.ch/syslog/2016/01/15/secure-your-cloud-computing-architecture-with-a-bastion/"&gt;Create a Bastion!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I hope you'll find some useful infos there. But of course it is also serving as a personnal reminder !&lt;/p&gt;
-&lt;p&gt;Hopefully I can keep at the same pace for the rest of the year :-) &lt;/p&gt;</summary><category term="web-publications"></category></entry></feed>
+&lt;p&gt;Hopefully I can keep at the same pace for the rest of the year :-) &lt;/p&gt;</summary><category term="web-publications"></category><category term="docker"></category><category term="ansible"></category><category term="exoscale"></category><category term="linux.com"></category></entry></feed>
