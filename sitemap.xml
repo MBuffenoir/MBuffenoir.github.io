@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2016-06-17T01:52:28-00:00</lastmod>
+<lastmod>2016-06-17T12:25:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2016-06-17T01:52:28-00:00</lastmod>
+<lastmod>2016-06-17T12:25:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2016-06-17T01:52:28-00:00</lastmod>
+<lastmod>2016-06-17T12:25:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2016-06-17T01:52:28-00:00</lastmod>
+<lastmod>2016-06-17T12:25:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
@@ -53,7 +53,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/ansible.html</loc>
+<loc>/tag/web-publications.html</loc>
 <lastmod>2016-06-15T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
@@ -67,14 +67,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/exoscale.html</loc>
+<loc>/tag/ansible.html</loc>
 <lastmod>2016-06-15T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>/tag/web-publications.html</loc>
+<loc>/tag/exoscale.html</loc>
 <lastmod>2016-06-15T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
