@@ -12,7 +12,7 @@
 &lt;ul&gt;
 &lt;li&gt;As a big fan of the mighty Ansible, I wrote on how to use it to &lt;a href="https://www.exoscale.ch/syslog/2016/05/26/nginx-ansible/"&gt;deploy webservers&lt;/a&gt; on their platform.&lt;/li&gt;
 &lt;li&gt;Because I think the documentation on how to use cloudstack API is not explanotory enough, I did this &lt;a href="https://www.exoscale.ch/syslog/2016/02/23/get-started-with-the-exoscale-api-client/"&gt;little cheatsheet of cs command&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Oh and also something that should help you keep your cloud infrastructure safe: &lt;a href="https://www.exoscale.ch/syslog/2016/01/15/secure-your-cloud-computing-architecture-with-a-bastion/"&gt;Create a Bastion!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oh and also something that should help you keep your cloud infrastructure safe: &lt;a href="https://www.exoscale.ch/syslog/2016/01/15/secure-your-cloud-computing-architecture-with-a-bastion/"&gt;create a Bastion!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I hope you'll find some useful infos there. But of course it is also serving as a personnal reminder !&lt;/p&gt;
 &lt;p&gt;Hopefully I can keep at the same pace for the rest of the year :-) &lt;/p&gt;</summary><category term="web-publications"></category><category term="docker"></category><category term="ansible"></category><category term="exoscale"></category><category term="linux.com"></category></entry></feed>
