@@ -90,7 +90,7 @@
 
 
 <p>On most linux distribution you should be good to go by installing the <code>inotify-tools</code> package.</p>
-<p>The fswatch tool will output events containing the paths of modified files in your project. By simply triggering a rsync on such events you can keep your local directy in sync with the remote one. Adapt the different paths to match your directory structure and run a command similar to this one: </p>
+<p>The fswatch tool will output events when files are modified in your project. By simply triggering a rsync on such events you can keep your local directy in sync with the remote one. Adapt the different paths to match your directory structure and run a command similar to this one: </p>
 <div class="highlight"><pre><span class="code-line"><span></span>fswatch -o -e &#39;.git&#39; . | while read num ; \</span>
 <span class="code-line">do \</span>
 <span class="code-line">    rsync -avzh -e &quot;ssh -i /path/to/home/.docker/machine/machines/machine-name/id_rsa&quot; --progress --exclude &#39;.git&#39; . ubuntu@$(docker-machine ip machine-name):/home/ubuntu; \</span>
