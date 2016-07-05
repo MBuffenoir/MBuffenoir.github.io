@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mat's weblog</title><link href="/" rel="alternate"></link><link href="/feeds/docker.atom.xml" rel="self"></link><id>/</id><updated>2016-07-05T18:00:00+02:00</updated><entry><title>Keep your project in sync with your docker-machine host</title><link href="/keep-project-synced-with-machine.html" rel="alternate"></link><published>2016-07-05T18:00:00+02:00</published><author><name>Mathieu Buffenoir</name></author><id>tag:,2016-07-05:keep-project-synced-with-machine.html</id><summary type="html">&lt;p&gt;&lt;a href="https://docs.docker.com/machine/"&gt;Docker-machine&lt;/a&gt; is a great tool to create remote instances to run your containers on. But, as of today, it does not provide any way to keep your project code in sync with your remote host. For example, this become a problem when you start mounting configuration files as volumes in your containers. Of course you could run a &lt;code&gt;docker-machine scp -r . &amp;lt;machine&amp;gt;&lt;/code&gt; each time you modify something, but this solution is rapidly cumbersome and it is not possible to exclude files. The one-liner I'll present in this post will help your solve those issues.&lt;/p&gt;
+&lt;p&gt;Oh! And there is an &lt;a href="https://github.com/docker/machine/issues/179"&gt;open issue&lt;/a&gt; to discuss this question.&lt;/p&gt;
+&lt;p&gt;First thing first install fswatch&lt;/p&gt;
+&lt;p&gt;On a mac with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;brew install fswatch&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;On most linux distribution you should be good to go by installing the &lt;code&gt;inotify-tools&lt;/code&gt; package.&lt;/p&gt;
+&lt;p&gt;The fswatch tool will output events containing the paths of modified files in your project. By simply triggering a rsync on such events you can keep your local directy in sync with the remote one. Adapt the different paths to match your directory structure and run a command similar to this one: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="code-line"&gt;&lt;span&gt;&lt;/span&gt;fswatch . -e &amp;#39;.git&amp;#39; | while read f; do echo rsync -avzh -e &amp;#39;ssh -i /path/to/home/.docker/machine/machines/machine-name/id_rsa &amp;#39; --exclude &amp;#39;.git&amp;#39; . ubuntu@$(docker-machine ip machine-name):/home/ubuntu; done &amp;amp;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note that I filtered out the .git directory here.&lt;/p&gt;
+&lt;p&gt;I hope this will save you a few headaches and increase your productivity as it did to mine :-)&lt;/p&gt;</summary><category term="docker-machine"></category><category term="docker"></category><category term="sync"></category><category term="rsync"></category><category term="ssh"></category><category term="scp"></category></entry></feed>
