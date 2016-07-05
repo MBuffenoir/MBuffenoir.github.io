@@ -31,11 +31,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 <meta name="author" content="Mathieu Buffenoir" />
-<meta name="description" content="Docker-machine is a great tool to create remote instance to run your container. But, as of today, it does not provide any way to keep your project code in sync with your remote host. This one-liner will help your solve this issue." />
+<meta name="description" content="Docker-machine is a great tool to create remote instance to run your container. But, as of today, it does not provide any way to keep your project code in sync with your remote host. This one-liner will help you solve this issue." />
 <meta name="keywords" content="docker-machine, docker, sync, rsync, ssh, scp">
 <meta property="og:site_name" content="Mat's weblog"/>
 <meta property="og:title" content="Keep your project in sync with your docker-machine host"/>
-<meta property="og:description" content="Docker-machine is a great tool to create remote instance to run your container. But, as of today, it does not provide any way to keep your project code in sync with your remote host. This one-liner will help your solve this issue."/>
+<meta property="og:description" content="Docker-machine is a great tool to create remote instance to run your container. But, as of today, it does not provide any way to keep your project code in sync with your remote host. This one-liner will help you solve this issue."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="/keep-project-synced-with-machine.html"/>
 <meta property="og:type" content="article"/>
@@ -83,7 +83,7 @@
   <div>
     <p><a href="https://docs.docker.com/machine/">Docker-machine</a> is a great tool to create remote instances to run your containers on. But, as of today, it does not provide any way to keep your project code in sync with your remote host. For example, this become a problem when you start mounting configuration files as volumes in your containers. Of course you could run a <code>docker-machine scp -r . &lt;machine&gt;</code> each time you modify something, but this solution is rapidly cumbersome and it is not possible to exclude files. The one-liner I'll present in this post will help your solve those issues.</p>
 <p>Oh! And there is an <a href="https://github.com/docker/machine/issues/179">open issue</a> to discuss this question.</p>
-<p>First thing first install fswatch:</p>
+<p>First thing first install fswatch: </p>
 <p>On a mac with:</p>
 <div class="highlight"><pre><span class="code-line"><span></span>brew install fswatch</span>
 </pre></div>
@@ -91,7 +91,10 @@
 
 <p>On most linux distribution you should be good to go by installing the <code>inotify-tools</code> package.</p>
 <p>The fswatch tool will output events containing the paths of modified files in your project. By simply triggering a rsync on such events you can keep your local directy in sync with the remote one. Adapt the different paths to match your directory structure and run a command similar to this one: </p>
-<div class="highlight"><pre><span class="code-line"><span></span>fswatch . -e &#39;.git&#39; | while read f; do echo rsync -avzh -e &#39;ssh -i /path/to/home/.docker/machine/machines/machine-name/id_rsa &#39; --exclude &#39;.git&#39; . ubuntu@$(docker-machine ip machine-name):/home/ubuntu; done &amp;</span>
+<div class="highlight"><pre><span class="code-line"><span></span>fswatch -o -e &#39;.git&#39; . | while read num ; \</span>
+<span class="code-line">do \</span>
+<span class="code-line">    rsync -avzh -e &quot;ssh -i /path/to/home/.docker/machine/machines/machine-name/id_rsa&quot; --progress --exclude &#39;.git&#39; . ubuntu@$(docker-machine ip machine-name):/home/ubuntu; \</span>
+<span class="code-line">done</span>
 </pre></div>
 
 
@@ -177,7 +180,7 @@
   },
   "image": "/images/profile.png",
   "url": "/keep-project-synced-with-machine.html",
-  "description": "Docker-machine is a great tool to create remote instance to run your container. But, as of today, it does not provide any way to keep your project code in sync with your remote host. This one-liner will help your solve this issue."
+  "description": "Docker-machine is a great tool to create remote instance to run your container. But, as of today, it does not provide any way to keep your project code in sync with your remote host. This one-liner will help you solve this issue."
 }
 </script></body>
 </html>
